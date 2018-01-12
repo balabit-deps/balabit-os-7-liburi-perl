@@ -1,0 +1,15 @@
+Description: fix spelling error in POD
+Author: Lucas Kanashiro <kanashiro@debian.org>
+Last-Updated: 2017-08-06
+
+--- a/lib/URI/Escape.pm
++++ b/lib/URI/Escape.pm
+@@ -109,7 +109,7 @@ cleaner and is a few characters less to
+ 
+ In a simple benchmark test I did,
+ calling the function (instead of the inline RE above) if a few chars
+-were unescaped was something like 40% slower, and something like 700% slower if none were.  If
++were unescaped was something like 40% slower, and something like 700% slower if none was.  If
+ you are going to unescape a lot of times it might be a good idea to
+ inline the RE.
+ 
